@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Norte - XtremeTech</title>
+    <!-- Agrega el enlace a Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-center">
+
+    <h1>Zona Norte - Xtreme Nights</h1>
+
+    <!-- Utiliza las clases de Bootstrap para centrar y hacer más grandes los botones -->
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-primary btn-lg" onclick="irA('boliches')">Boliches</button>
+        <button class="btn btn-primary btn-lg" onclick="irA('bares')">Bares</button>
+        <button class="btn btn-primary btn-lg" onclick="irA('restaurantes')">Restaurantes</button>
+    </div>
+
+    <!-- Botón de volver -->
+    <a class="btn btn-secondary btn-lg mt-3" href="procesar_zona.php">Volver</a>
+
+    <!-- Puedes agregar aquí más contenido según tus necesidades -->
+
+    <!-- Puedes agregar enlaces a tus scripts JavaScript aquí -->
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        function irA(categoria) {
+            // Puedes agregar código JavaScript para redirigir a la página específica de la categoría
+            // Por ejemplo, podrías usar window.location.href
+            switch (categoria) {
+                case 'boliches':
+                    window.location.href = 'boliches.php';
+                    break;
+                case 'bares':
+                    window.location.href = 'bares.php';
+                    break;
+                case 'restaurantes':
+                    window.location.href = 'restaurantes.php';
+                    break;
+                default:
+                    // Manejo de error o redirección predeterminada
+                    break;
+            }
+        }
+    </script>
+
+    <!-- Agrega el script de Bootstrap JavaScript (opcional, pero necesario para algunas funcionalidades) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
